@@ -116,4 +116,3 @@ echo "Ok, we won't install the DB - you are on your own."
 esac
 
 echo "I just saved you a shitload of time and headache. You're welcome."
-{"mode":"full","isActive":false}
