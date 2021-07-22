@@ -37,7 +37,7 @@ read -e -p "---> What should the new admin password be?: " NEW_ADMIN_PASSWORD
 read -e -p "---> What should we make the SSH port?: " -i "22" NEW_SSH_PORT
 read -e -p "---> Enter your web user usually www-data (nginx for Ubuntu): " -i "www-data" MY_WEB_USER
 
-adduser ${NEW_ADMIN} --disabled-password --gecos ""
+adduser ${NEW_ADMIN} --force-badname --disabled-password --gecos ""
 echo "${NEW_ADMIN}:${NEW_ADMIN_PASSWORD}"|chpasswd
 
 gpasswd -a ${NEW_ADMIN} sudo
